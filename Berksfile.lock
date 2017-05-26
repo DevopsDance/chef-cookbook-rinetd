@@ -4,8 +4,11 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  apt (6.1.0)
-  devopsdance-rinetd (0.1.0)
+  apt (2.9.2)
+  debian (1.8.0)
+    apt (< 3.0)
+  devopsdance-rinetd (0.2.0)
+    debian (>= 0.0.0)
     ubuntu (>= 0.0.0)
   ubuntu (2.0.1)
     apt (>= 0.0.0)
