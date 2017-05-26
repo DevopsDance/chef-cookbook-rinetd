@@ -14,4 +14,5 @@ dependencies:
 
 test:
   override:
-    - bundle exec kitchen test
+    - bundle exec kitchen test:
+        timeout: 900
