@@ -9,7 +9,10 @@ provisioner:
   require_chef_omnibus: 12.19.36-1
 
 platforms:
-  - name: ubuntu-16.04
+  - name: ubuntu-xenial
+  - name: ubuntu-trusty
+  - name: debian-jessie
+  - name: debian-wheezy
 
 suites:
   - name: default

@@ -4,8 +4,6 @@ machine:
   timezone: UTC
   services:
     - docker
-  environment:
-    KITCHEN_YAML: .kitchen.ci.yml
 
 dependencies:
   pre:
