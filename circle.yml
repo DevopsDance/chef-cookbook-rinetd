@@ -8,6 +8,8 @@ machine:
     KITCHEN_YAML: .kitchen.ci.yml
 
 dependencies:
+  pre:
+    - gem install bundler
   bundler:
     without:
       - workstation
