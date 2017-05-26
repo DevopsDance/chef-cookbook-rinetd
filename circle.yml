@@ -4,8 +4,6 @@ machine:
   timezone: UTC
   services:
     - docker
-  environment:
-    KITCHEN_YAML: .kitchen.ci.yml
 
 dependencies:
   pre:
@@ -16,4 +14,6 @@ dependencies:
 
 test:
   override:
-    - kitchen test
+    - bundle exec rake
+    - bundle exec kitchen test:
+        timeout: 900

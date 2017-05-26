@@ -7,9 +7,9 @@ RuboCop::RakeTask.new do |rubocop|
 end
 
 FoodCritic::Rake::LintTask.new do |foodcritic|
-    foodcritic.options = {
-        progress: true
-    }
+  foodcritic.options = {
+    progress: true,
+  }
 end
 
 task default: [:rubocop, :foodcritic] do

@@ -1,12 +1,13 @@
+
 class Chef
   class Provider
-    class Rinetd < Chef::Provider::LWRPBase
+    class Rinetd < Chef::Provider::LWRPBase # ~FC057
       def config
         parameters = run_context.resource_collection.select do |resource|
           resource.is_a? Chef::Resource::Rinetd
         end
 
-        include_recipe 'devopsdance-rinetd'
+        include_recipe 'devopsdance-rinetd' # ~FC007
 
         template '/etc/rinetd.conf' do
           source 'rinetd.conf.erb'

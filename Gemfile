@@ -6,5 +6,7 @@ gem 'cookstyle'
 gem 'foodcritic'
 
 group :workstation do
-    gem 'kitchen-vagrant'
+  gem 'kitchen-vagrant'
 end
+
+# vim: ft=ruby:
