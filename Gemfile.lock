@@ -67,6 +67,8 @@ GEM
     hitimes (1.2.4)
     httpclient (2.8.3)
     json (2.1.0)
+    kitchen-docker (2.6.0)
+      test-kitchen (>= 1.0.0)
     kitchen-vagrant (1.1.0)
       test-kitchen (~> 1.4)
     mini_portile2 (2.1.0)
@@ -165,6 +167,7 @@ DEPENDENCIES
   berkshelf
   cookstyle
   foodcritic
+  kitchen-docker
   kitchen-vagrant
 
 BUNDLED WITH
