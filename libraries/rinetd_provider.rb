@@ -26,7 +26,6 @@ class Chef
       end
 
       action :disable do
-        config
       end
     end
   end
