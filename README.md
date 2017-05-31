@@ -18,9 +18,9 @@ The default recipe installs and starts `rinetd` service.
 
 *Actions*
 
-- `:enable` (default action). Enable new rinetd configuration and saves it to
+- `:create` (default action). Enable new rinetd configuration and saves it to
   `/etc/rinetd.conf` and makes sure that daemon is being restarted.
-- `:disable`. Disable rinetd configuration and makes sure that daemon is being
+- `:delete`. Disable rinetd configuration and makes sure that daemon is being
   restarted.
 
 *Parameters*
