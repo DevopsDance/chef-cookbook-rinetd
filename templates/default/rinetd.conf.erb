@@ -19,7 +19,7 @@
 #
 # bindadress    bindport  connectaddress  connectport
 
-<% @parameters.each do |param| %>
+<% @params.each do |param| %>
 <%= param.bind_address %> <%= param.bind_port %> <%= param.connect_address %> <%= param.connect_port %>
 <% end %>
 
