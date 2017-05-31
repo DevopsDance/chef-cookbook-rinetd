@@ -5,15 +5,24 @@ driver:
 
 provisioner:
   name: chef_zero
-  require_chef_omnibus: 12.19.36-1
 
 platforms:
   - name: ubuntu-16.04
   - name: ubuntu-15.04
   - name: debian-8.7
-  - name: debian-7.11
+  - name: debian-8.6
+
+verifier:
+  name: inspec
 
 suites:
-  - name: default
+  - name: default-12
     run_list:
       - recipe[devopsdance-rinetd::_test]
+    provisioner:
+      require_chef_omnibus: 12
+  - name: default-13
+    run_list:
+      - recipe[devopsdance-rinetd::_test]
+    provisioner:
+      require_chef_omnibus: 13
