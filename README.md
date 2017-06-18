@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/DevopsDance/chef-cookbook-rinetd.svg?style=svg)](https://circleci.com/gh/DevopsDance/chef-cookbook-rinetd)
+[![Build Status](https://travis-ci.org/DevopsDance/chef-cookbook-rinetd.svg?branch=master)](https://travis-ci.org/DevopsDance/chef-cookbook-rinetd)
 
 # devopsdance-rinetd
 

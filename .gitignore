@@ -7,10 +7,12 @@
 pkg/
 
 # Berkshelf
+Berksfile.lock
 .vagrant
 /cookbooks
 
 # Bundler
+Gemfile.lock
 bin/*
 .bundle/*
 
